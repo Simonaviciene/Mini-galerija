@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+	 box-sizing: border-box;
+}
+header{
+	flex-wrap: wrap;
+}
+
+body{
+	margin: 0;
+}
+.NuotraukuGalerija{
+	padding: 10px;
+}
+.pwgSlider a{
+	display: flex;
+	flex-direction: column;
+}
+.pwgSlider img{
+	width: 200px;
+	height: 200px;
+}
+.Tekstas{
+	position: absolute;
+	text-align: right;
+	top: 0%;
+	right: 20%;
+
+}
+.Tekstas ul{
+	list-style: none;
+}
+
+.slider{
+	scroll-behavior: smooth;
+}	
+.scroll img{
+	flex-direction: column;
+	max-width: 800px;
+	height: auto;
+}
+.foto{
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+.desc{ 
+	opacity: 0;
+	position: absolute;
+	text-align: left;
+	width: 800px;
+	color: red;
+	right: 0;
+	top: 0;
+	padding: 0.75em 1em;
+	font-weight: 700;
+	z-index: 2;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: rgba(0,0,0,.7);
+	-webkit-transition: opacity .3s ease-in-out;
+	transition: opacity .3s ease-in-out;
+
+
+}
+.foto:hover .desc{
+	opacity: 1;
+}
+
+
+
+
+
